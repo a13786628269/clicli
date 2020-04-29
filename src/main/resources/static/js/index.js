@@ -57,7 +57,6 @@ var index = {
 				that.initSkInterval(120000);
 			}
 			var ptTop = $pt.offset().top;
-			console.log($pt.data('hadInitPt'));
 			if ( ptTop - scrollTop - winHeight <= 0 && !$pt.data('hadInitPt')){//只执行一次
 				that.reflashPT();
 				$pt.data('hadInitPt', 1);
@@ -344,7 +343,7 @@ var index = {
 				}
 			},
 			error: function(){
-				console.log('get sk info err~');
+				
 			}
 		})
 	},
@@ -377,7 +376,7 @@ var index = {
 				}
 			},
 			error: function(){
-				console.log('get pt info err~');
+				
 			}
 		})
 	},
