@@ -20,4 +20,18 @@ public class PageController {
 	public String doSearchUI() {
 		return "search";
 	}
+	/**
+	 * C哩C哩登录页
+	 */
+	@RequestMapping("login")
+	public String doLoginUI() {
+		return "login";
+	}
+	/**
+	 * C哩C哩注册页
+	 */
+	@RequestMapping("register")
+	public String doRegisterUI() {
+		return "register";
+	}
 }

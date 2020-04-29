@@ -26,8 +26,8 @@
 		<div class="c_container">
 			<div class="c_tools_left">
 				<p>吱，欢迎来到C哩C哩商城</p>
-									<a class="c_tools_item" href="javascript:;" target="_blank">请登录</a>
-					<a class="c_tools_item" href="javascript:;" target="_blank">免费注册</a>
+									<a class="c_tools_item" href="javascript:void(0);" onclick="doLoginUI()" target="_blank">请登录</a>
+					<a class="c_tools_item" href="javascript:void(0);" onclick="doRegisterUI()" target="_blank">免费注册</a>
 							</div>
 			<div class="c_tools_right">
 				<a class="c_tools_item" href="javascript:;" target="_blank">我的订单</a>
@@ -1179,6 +1179,12 @@
 	<script type="text/javascript">
 	    function doSeachUI(){
 	    	location.href="search";
+	    }
+	    function doLoginUI(){
+	    	location.href="login";
+	    }
+	    function doRegisterUI(){
+	    	location.href="register";
 	    }
 	</script>
 	<script src="js/jquery.js"></script>
