@@ -12,7 +12,7 @@ public class PageController {
 	@RequestMapping("index")
 	public String doIndexUI() {
 		return "index";
-	}
+	} 
 	/**
 	 * C哩C哩商品查询页
 	 */
