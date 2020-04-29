@@ -76,7 +76,7 @@
 	<nav class="c_nav_btm">
 								<a href="javascript:;" target="_blank">图书仓</a>
 											<a href="javascript:;" target="_blank">汉风仓</a>
-											<a href="http://localhost/pages/search.html"  class="searchPage">手办仓</a>
+											<a href="javascript:void(0);"  onclick="doSeachUI()">手办仓</a>
 											<a href="javascript:;" target="_blank">首饰仓</a>
 											<a href="javascript:;" target="_blank">零食仓</a>
 											<a href="javascript:;" target="_blank">文具仓</a>
@@ -1177,7 +1177,6 @@
 		{{/each}}
 	</script>
 	<script type="text/javascript">
-	    $(".searchPage").click(doSearchUI);
 	    function doSeachUI(){
 	    	location.href="search";
 	    }
