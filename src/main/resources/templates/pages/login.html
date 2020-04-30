@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <title>clicli</title>
+</head>
+<body>
+    <!-- header start -->
+<div class="c_content c_content_top">
+    <a href="javascript:void(0);" onclick="doIndexUI()" class="c_top_logo c_fl"><img class="c_logo_img" src="image/lg.png" alt="logo"></a>
+    <p class="c_top_txt c_fr">欢迎登录</p>
+    <div class="c_clear_both"></div>
+</div>
+<!-- header end -->
+<div class="c_login_wrap">
+    <div class="c_content">
+        <form action="#" method="post" class="c_login_box c_fr">
+            <ul id="c_comm_login">
+                <li><p>用户登录</p></li>
+                <li>
+                    <label><span class="c_user_logo c_fl"></span><input type="text" class="c_login_input c_fl" name="cycang_user" id="cycang_user" placeholder="请输入手机号" required></label>
+                </li>
+                <div class="c_clear_both"></div>
+                <li>
+                    <label><span class="c_pwd_logo c_fl"></span><input type="password" class="c_login_input c_fl" name="cycang_pwd" id="cycang_pwd" placeholder="密码" required></label>
+                    <div class="c_clear_both"></div>
+                </li>
+                <li>
+                    <label><span class="c_v_code_font c_fl">验证码:</span><input type="text" class="c_v_code_input c_fl" name="captcha" id="code" placeholder="验证码" required></label>
+                    <img src="" class="c_v_code_img c_fl" id="verify" title="点击换一张" align="absmiddle">
+                    <div class="c_clear_both"></div>
+                </li>
+                <li>
+                    <label><input type="checkbox" class="c_fl" name="remember" id="remember"><span class="c_remember c_fl" >记住我</span></label>
+                    <a href="i.php?c=login&a=reset" class="c_remember c_fr">忘记密码？</a>
+                    <div class="c_clear_both"></div>
+                </li>
+                <li>
+                    <a href="###" class="c_btn c_login_btn c_fl c_fake_a" id="login-btn">登录</a>
+                    <a href="javascript:void(0);" onclick="doRegisterUI()"class="c_btn c_reg_btn c_fl" id="reg-btn">快速注册</a>
+                    <div class="c_clear_both"></div>
+                </li>
+                <li class="c_wq_login">
+                    <span class="c_fl c_quick_login_desc">一键登录:</span>
+                    <span class="c_fl c_quick_login">
+                        <a href="https://api.weibo.com/oauth2/authorize?client_id=3038839783&redirect_uri=http%3A%2F%2Fcycang.com%2Fweibo_login_callback.php&response_type=code" target="_blank"><div class="c_weibo_icon c_fl"></div>微博</a>
+                    </span>
+                    <span class="c_fl c_quick_login">
+                        <a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101226230&redirect_uri=http%3A%2F%2Fcycang.com%2Fqq_login_callback.php&state=73fae7f324219d2e5849c178e91d9011&scope=get_user_info" target="_blank"><div class="c_qq_icon c_fl"></div>QQ</a>
+                    </span>
+					<span class="c_fl c_quick_login">
+						<a href="javascript:;" class="c_wechat_btn"><div class="c_wechat_icon c_fl"></div>微信</a>
+					</span>
+                    <div class="c_clear_both"></div>
+                </li>
+                <div class="c_line"></div>
+                <li class="c_tips">
+                    <span>1.(♡˙︶˙♡)</span><br>
+                    <span>2.(♡˙︶˙♡)</span>
+                </li>
+            </ul>
+            <!--wechat login-->
+            <div class="c_wechat_box">
+            	<div id="wechat_login_container"></div>
+            	<a href="javascript:;" class="c_wechat_back">返回登录</a>
+            </div>
+        </form>
+    </div>
+    <div class="c_clear_both"></div>
+</div>
+
+<!-- footer start -->
+<div class="c_footer c_footer2">
+    <div class="c_content">
+    	<div class="c_customer_service"></div>
+        <div class="c_copy_right"> ICP © 2020 Fx函数科技有限公司 版权所有
+		<!-- cycang.com Baidu tongji analytics -->
+        </div>
+    </div>
+</div>
+	<script type="text/javascript">
+	    function doRegisterUI(){
+	    	location.href="register";
+	    }
+	    
+	    function doIndexUI(){
+	    	location.href="index";
+	    }
+	</script>
+</body>
+</html>
+
+

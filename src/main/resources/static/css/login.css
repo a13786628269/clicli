@@ -1,0 +1,53 @@
+a,body,html,i,li,p,ul{margin:0;padding:0;font-family:Microsoft YaHei;font-style:normal}
+body,html{min-width:1035px;color:#333}
+img{border:none}
+h1,h2,h3,h4,h5,h6,input{margin:0;padding:0;font-weight:400}
+button,input[type=button]{border:none;outline:none}
+em,strong{font-style:normal}[type=radio]{margin-right:10px;vertical-align:middle}
+li{list-style:none}
+a{color:#333;text-decoration:none}
+.c_fl{float:left!important}
+.c_fr{float:right!important}
+.c_clear_both{clear:both;height:0}
+div,input{box-sizing:border-box;-webkit-box-sizing:border-box}
+.text_c{text-align:center}
+.c_content{width:1040px;margin:0 auto}
+.c_content_top{height:90px}
+.c_top_txt{font-size:20px;color:#333;margin-right:20px;line-height:90px}
+.c_top_logo{margin:15px 0 0 20px}
+.c_logo_img{width:70px}
+.c_login_wrap{width:100%;height:670px;background:url("/image/login_backg.jpg") no-repeat top}
+.c_login_box{margin:70px 20px 0 0;width:390px;height:525px;background:#fff;filter:alpha(opacity=87);-moz-opacity:.87;opacity:.87;box-shadow:0 0 15px rgba(0,0,0,.3);-moz-box-shadow:0 0 15px rgba(0,0,0,.3)}
+.c_login_box ul{padding:0 45px}
+.c_login_box ul p{margin-top:24px;font-size:20px;color:#333}
+.c_user_logo{background:#d3d3d3 url("/image/user_icon.png") no-repeat 50%}
+.c_pwd_logo,.c_user_logo{display:block;height:42px;width:42px;border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px}
+.c_pwd_logo{background:#d3d3d3 url("/image/pwd_icon.png") no-repeat 50%}
+.c_pwd_logo.ipt_error,.c_user_logo.ipt_error{height:40px;border-width:1px 0 1px 1px;border-style:solid;border-color:#e4393c}
+.c_login_input{display:block;height:42px;width:256px;border:1px solid #d3d3d3;border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;font-size:16px;padding:10px}
+#cycang_pwd.ipt_error,#cycang_user.ipt_error{color:#e4393c;border:1px solid #e4393c}
+#cycang_pwd.ipt_error ::-webkit-input-placeholder,#cycang_user.ipt_error ::-webkit-input-placeholder{color:#e4393c}
+#cycang_pwd.ipt_error :-moz-placeholder,#cycang_pwd.ipt_error ::-moz-placeholder,#cycang_user.ipt_error :-moz-placeholder,#cycang_user.ipt_error ::-moz-placeholder{color:#e4393c}
+#cycang_pwd.ipt_error :-ms-input-placeholder,#cycang_user.ipt_error :-ms-input-placeholder{color:#e4393c}
+.c_login_box li{margin-top:20px}
+.c_login_box li:first-child{margin-top:24px}
+.c_v_code_font{font-size:16px;color:#666;line-height:42px}
+.c_v_code_input{display:block;height:42px;width:110px;border:1px solid #d3d3d3;border-radius:4px;-moz-border-radius:4px;padding:10px;font-size:16px}
+.c_v_code_img,.c_v_code_input{margin-left:18px}
+.c_remember{font-size:12px;color:#666;margin:-3px 0 0 10px}
+.c_login_box ul li:nth-child(2){margin-top:24px}
+.c_btn{width:160px;height:42px;border-radius:4px;box-sizing:border-box;cursor:pointer}
+.c_login_btn{background-color:#ed3f3f;color:#fff;border:none;letter-spacing:5px}
+.c_reg_btn{margin-left:14px;display:block;background:#fff;width:126px;color:#3c3c3c;border:1px solid #ed3f3f}
+.c_login_btn,.c_reg_btn{line-height:42px;font-weight:700;text-align:center}
+.c_quick_login_desc{font-size:16px;margin-right:5px}
+.c_quick_login{margin-left:7px}
+.c_wq_login{font-size:14px;line-height:16px;color:#666}
+.c_weibo_icon{margin:0 5px;width:18px;height:14px;background-image:url("/image/weibo_icon.png")}
+.c_qq_icon{width:13px;background-image:url("/image/qq_icon.png")}
+.c_qq_icon,.c_wechat_icon{margin:0 5px 0 9px;height:14px}
+.c_wechat_icon{width:17px;background-image:url("/image/wechat_icon.png")}
+.c_line{width:390px;height:1px;background-color:#ccc;margin:24px 0 24px -45px}
+.c_tips{font-size:14px;color:#666}
+.c_wechat_box{display:none;width:390px;height:525px;padding:20px 45px;background-color:#e1e0de;position:relative}
+.c_wechat_back{position:absolute;right:50px;bottom:50px}
