@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fx.clicli.dao.GoodsSearchDao">
+       
+      <!-- 基于商品名查询价格,图片url,嵌套查询商品简介 -->     
+     <select id="findObjects" resultType="com.fx.clicli.vo.GoodsViewVo">
+        select price,picture,page
+        from property_value
+       <where>
+			<if test="goodsName!=null and goodsName!=''">
+				type_name like concat("%",#{goodsName},"%")
+			</if>
+		</where>
+     </select>
+
+</mapper>

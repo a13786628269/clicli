@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +9,7 @@
 		<meta name="keywords" content="C哩C哩,clicli.com,二次元,ACG,精品,正品,特卖">
 		<meta name="description" content="">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<script src="/js/wb.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>  
 	<body>
 		<!--header start-->
@@ -16,8 +17,8 @@
 	<div class="cyc_h_top_wrap">
 		<div class="cyc_func_container">
 			<div class="cyc_tools_left left" id="c_log_reg">
-								<a href="javascript:;" class="cyc_tools_item" id="">登录</a>
-				<a href="javascript:;" class="cyc_tools_item" id="">注册</a>
+					<a class="cyc_tools_item" href="javascript:void(0);" onclick="doLoginUI()" target="_blank">请登录</a>
+					<a class="cyc_tools_item" href="javascript:void(0);" onclick="doRegisterUI()" target="_blank">免费注册</a>
             				</div>
 			<div class="cyc_tools_right right">
 				<div class="c_weibo right">
@@ -36,11 +37,10 @@
 			<a href="javascript:;" class="cyc_logo_link"><img class="" src="/picture/logo.png" style="width: 100px;height:100px" alt=""></a>
 		</div>
 		<div class="cyc_search left">
-			<form action="index.php" method="get" target="_blank" id="J_search" data-suggest-url="index.php?c=product&a=getSearchSuggest">
 				<div class="cyc_search_input">
 					<input type="hidden" name="a" value="page">
-					<input type="text" class="cyc_search_key" name="q" value="" id="search_key" autocomplete="off">
-					<input type="submit" value="搜索" class="cyc_search_btn">
+					<input type="text" name="q" id="search_key" class="cyc_search_key" placeholder="快来搜索您的手办吧！！！">
+						<button type="button" class="cyc_search_btn">搜索</button>
 				</div>
 				<style>
 					
@@ -49,7 +49,6 @@
 					<option value="1" selected="selected">商品</option>
 					<option value="2">店铺</option>
 				</select>
-			</form>
 			<ul class="cyc_hot_query">
 															<li><a href="javascript:;" target="_blank" title="lolita">lolita</a></li>
 											<li><a href="javascript:;" target="_blank" title="Honest">Honest</a></li>
@@ -79,7 +78,7 @@
 			<div class="cyc_h_link right">
 				<div class="cyc_link_list right">
 					<div class="cyc_link_item left">
-						<a target="_blank" href="javascript:;">首页</a>
+						<a target="_blank" href="javascript:void(0);" onclick="doIndexUI()">首页</a>
 					</div>
 															<div class="cyc_link_item left ">
 						<a target="_blank" href="javascript:;">图书仓</a>
@@ -163,9 +162,7 @@
 				</div>
 				<ul class="cyc_list left cyc_sub_category_list">
 											<li class="left cyc_item ">
-							<a href="javascript:;" class="c_fake_a cyc_link" data-cid="3">
-								全部
-							</a>
+							<a href="javascript:;" class="c_fake_a cyc_link" data-bid="0">全部</a>
 						</li>
 											<li class="left cyc_item ">
 							<a href="javascript:;" class="c_fake_a cyc_link" data-cid="108">
@@ -1991,16 +1988,16 @@
 					
 				</div>
 				<div class="c_normal_list_wrap">
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page229165()">
 							<img src="" data-url="http://f.p.cycangcdn.com/1584015456512.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">预售【官方正版】明日方舟 ARCTECH可动系列 1/8 阿消 手办</p>
 								<p class="c_list_item_price">
 																		&yen; 496.00
-																	</p>
-																																							</div>
+					                        </p>
+                                   </div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page22747()">
 							<img src="" data-url="http://f.p.cycangcdn.com/supplier/1546853072450.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">【漫威】复仇者联盟系列《雷神3》可动人偶 角斗绿巨人</p>
@@ -2009,7 +2006,7 @@
 																	</p>
 																																							</div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page22746()">
 							<img src="" data-url="http://f.p.cycangcdn.com/supplier/1546852840637.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">【漫威】复仇者联盟系列可动人偶 蜘蛛侠</p>
@@ -2018,7 +2015,7 @@
 																	</p>
 																																							</div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page_22709()">
 							<img src="" data-url="http://f.p.cycangcdn.com/1545212696178.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">bilibili哔哩哔哩 粘土人 22娘33娘 BML 2016 .Ver 手办一对</p>
@@ -2027,7 +2024,7 @@
 																	</p>
 																																							</div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page_22626()">
 							<img src="" data-url="http://f.p.cycangcdn.com/1543474985494.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">结界幻想不要碰我的模型妹纸高达书籍多款亚克力警示牌</p>
@@ -2036,7 +2033,7 @@
 																	</p>
 																																							</div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page_21618()">
 							<img src="" data-url="http://f.p.cycangcdn.com/gallery/1532422044276.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">【卡漫星】正版 复仇者联盟3漫威环视 可动人偶手办模型</p>
@@ -2045,7 +2042,7 @@
 																	</p>
 																																							</div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page_21616()">
 							<img src="" data-url="http://f.p.cycangcdn.com/gallery/1532421922082.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">【卡漫星】正版 复仇者联盟3漫威鹰眼 可动人偶手办模型</p>
@@ -2054,7 +2051,7 @@
 																	</p>
 																																							</div>
 						</a>
-											<a href="javascript:;" target="_blank" class="c_list_item c_count_item " data-page='list'>
+											<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="page_21615()">
 							<img src="" data-url="http://f.p.cycangcdn.com/gallery/1532421813886.jpg" class="c_list_item_img c_scroll_load" width="250px" height="250px">
 							<div class="c_list_item_intro">
 								<p class="c_list_item_name">【卡漫星】正版 复仇者联盟3漫威蚁侠 可动人偶手办模型</p>
@@ -2179,7 +2176,7 @@
 		<!--footer start-->
 		<footer class="c_footer">
 	<div class="c_container">
-		<!--<div class="c_accept_wrap">
+		<<div class="c_accept_wrap">
 			<ul class="c_accept">
 				<li>
 					<i class="c_icon_cang1"></i>
@@ -2194,7 +2191,7 @@
 					<span>7天退货保障</span>
 				</li>
 			</ul>
-		</div>-->
+		</div>
 		<div class="c_infor_wrap">
 			<div class="c_infor">
 				<dl>
@@ -2369,27 +2366,95 @@
 			{{/each}}
 		</script>
 		<div class="c_fix_top"></div>
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+		 $(function(){
+			$(".cyc_search_btn").on("click",doSearchObject); // 为搜索按钮注册事件
+		})
+		// 搜索商品信息
+		function doSearchObject(){
+			  var params=""; 
+			  // 取出搜索框中的值
+			   var goodsName = $("#search_key").val();
+			   console.log(goodsName);
+		      // 判断提交的商品 
+		       if(goodsName){
+				   params={"goodsName":goodsName}
+				   console.log(params);
+			   }
+		       var url="doGoodsSearch";
+		       // 异步请求
+		       $.getJSON(url,params,function(result){
+				   doHandleQueryResult(result);  
+			   })
+		}
+		 // 检查查询结果
+		function doHandleQueryResult(result){
+			// 状态为1表示正常	
+	    	if(result.state==1){
+	    		// 每一行的数据显示出来
+	    		doSetTableBodyRows(result.data);
+	    		console.log(result.data);
+	        	}else{
+	        		alert(result.message);
+	        	}
+		}
+		 // 显示每一行的数据
+		function doSetTableBodyRows(data){
+			var Body = $(".c_normal_list_wrap");
+			Body.empty();
+			for(let i=0;i<data.length;i++){
+	    		Body.append(doCreateRow(data[i]));
+	      }
+		}
+		// 创建行
+		function doCreateRow(row){
+			return `<a href="javascript:void(0);" target="_blank" class="c_list_item c_count_item " data-page='list' onclick="${row.page}">
+			                    <img src="${row.picture}" data-url="" class="c_list_item_img c_scroll_load" width="250px" height="250px">
+			                    <div class="c_list_item_intro">
+				                   <p class="c_list_item_name">${row.proFile}</p>
+				                   <p class="c_list_item_price">&yen; ${row.price}</p>
+                                </div>
+		                     </a>`;
+		}
+	    function doIndexUI(){
+	    	location.href="index";
+	    }
+	    function doLoginUI(){
+	    	location.href="login";
+	    }
+	    function doRegisterUI(){
+	    	location.href="register";
+	    }
+	    function page229165(){
+	    	location.href="index-p_22915.html";
+	    }
+	    function page22747(){
+	    	location.href="index-p_22747.html";
+	    }
+	    function page22746(){
+	    	location.href="index-p_22746.html";
+	    }
+	    function page_22709(){
+	    	location.href="index-p_22709.html";
+	    }
+	    function page_22626(){
+	    	location.href="index-p_22626.html";
+	    }
+	    function page_21618(){
+	    	location.href="index-p_21618.html";
+	    }
+	    function page_21616(){
+	    	location.href="index-p_21616.html";
+	    }
+	    function page_21615(){
+	    	location.href="index-p_21615.html";
+	    }
+	</script>
 		<script src="/js/jquery.js"></script> 
 		<script src="/js/jquery.scrollLoading.js"></script>
-		<script>
-			var price = $('.c_condition_item.active a').data('price')? $('.c_condition_item.active a').data('price'):'';
-			var ajaxData = {
-				chid : 13+'',
-				cid : 0+'',
-				bid : 0+'',	
-			sort : 'new_order|desc',
-				price : price,
-				q : '',
-				is_new : '0',
-				supplier_code : '-1',
-				url : 'index.php?c=page&a=page',
-				pageType : '1'
-			}
-		</script>
+		
 		<script src="/js/header.js"></script>
 		<script src="/js/list.js"></script>
-		<script type="text/javascript">
-		
-		</script>
 	</body>
 </html>
