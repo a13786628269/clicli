@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/smoothproducts.css" type="text/css">
     <link rel="stylesheet" href="css/detail.css" type="text/css">
-    
+     <link href="http://c.csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON" />
     <script src="/js/wb.js" type="text/javascript" charset="utf-8"></script>
     <!--[if lt IE 9]> 
         <script src="/js/html5.js"></script>
@@ -34,8 +34,8 @@
 		<div class="tabs_tlt">C哩C哩会员<span class="dia_close"></span></div>
 
 	    <div id="tabs" class="tabs_item_list">
-			<a href="javascript:void(0);" class="on" id="tab_login_title">注册</a>
-	        <a href="javascript:void(0);" id="tab_reg_title">登录</a>
+			<a class="cyc_tools_item" href="javascript:void(0);" onclick="doLoginUI()" target="_blank">请登录</a>
+			<a class="cyc_tools_item" href="javascript:void(0);" onclick="doRegisterUI()" target="_blank">免费注册</a>
 	    </div>
 
 		<div id="tabs_body" class="tabs_body">
@@ -181,7 +181,7 @@
 			<div class="cyc_h_link right">
 				<div class="cyc_link_list right">
 					<div class="cyc_link_item left">
-						<a target="_blank" href="javascript:;">首页</a>
+						<a target="_blank" href="javascript:void(0);" onclick="doIndexUI()">首页</a>
 					</div>
 															<div class="cyc_link_item left ">
 						<a target="_blank" href="javascript:;">图书仓</a>
@@ -190,7 +190,7 @@
 						<a target="_blank" href="javascript:;">汉风仓</a>
 					</div>
 																				<div class="cyc_link_item left ">
-						<a target="_blank" href="javascript:;">手办仓</a>
+						<a href="javascript:void(0);"  onclick="doSeachUI()">手办仓</a>
 					</div>
 																				<div class="cyc_link_item left ">
 						<a target="_blank" href="javascript:;">首饰仓</a>
@@ -644,6 +644,15 @@
                 $('.c_pt_tips_all').removeClass('show');
             })
         })
+	    function doSeachUI(){
+	    	location.href="search";
+	    }
+	    function doLoginUI(){
+	    	location.href="login";
+	    }
+	    function doRegisterUI(){
+	    	location.href="register";
+	    }
 
     </script>
 </body>

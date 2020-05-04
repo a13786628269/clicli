@@ -21,7 +21,6 @@ public class GoodsSearchTest {
 	private GoodsDao  goodsDao;
 	@Test
 	public void Test() {
-		List<GoodsViewVo> list = GoodsSearchService.findObjects("阿消");
-		System.out.println(list);
+
 	}
 }

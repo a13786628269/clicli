@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/smoothproducts.css" type="text/css">
     <link rel="stylesheet" href="css/detail.css" type="text/css">
     <link rel="shortcut icon" href="#"/>
+     <link href="http://c.csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON" />
     <!--[if lt IE 9]> 
         <script src="js/html5.js"></script>
     <![endif]-->
@@ -34,8 +35,8 @@
 		<div class="tabs_tlt">C哩C哩会员<span class="dia_close"></span></div>
 
 	    <div id="tabs" class="tabs_item_list">
-			<a href="javascript:void(0);" class="on" id="tab_login_title">注册</a>
-	        <a href="javascript:void(0);" id="tab_reg_title">登录</a>
+			<a class="cyc_tools_item" href="javascript:void(0);" onclick="doLoginUI()" target="_blank">请登录</a>
+			<a class="cyc_tools_item" href="javascript:void(0);" onclick="doRegisterUI()" target="_blank">免费注册</a>
 	    </div>
 
 		<div id="tabs_body" class="tabs_body">
@@ -190,7 +191,7 @@
 						<a target="_blank" href="index-page_15.html">汉风仓</a>
 					</div>
 																				<div class="cyc_link_item left ">
-						<a target="_blank" href="index-page_13.html">手办仓</a>
+							<a href="javascript:void(0);"  onclick="doSeachUI()">手办仓</a>
 					</div>
 																				<div class="cyc_link_item left ">
 						<a target="_blank" href="index-page_12.html">首饰仓</a>
@@ -661,7 +662,17 @@
         </li>
         {{/each}}
     </script>
-
+  <script type="text/javascript">
+  function doSeachUI(){
+  	location.href="search";
+  }
+  function doLoginUI(){
+  	location.href="login";
+  }
+  function doRegisterUI(){
+  	location.href="register";
+  }
+  </script>
 
 
 
