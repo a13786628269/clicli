@@ -3,103 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="shortcut icon" href="#" />
     <title>register-clicli</title>
 </head>
 <body>
     <!-- header start -->
-    <div class="c_content c_content_top">
-            <a href="index.php"><img class="c_top_logo c_fl" src="//www.cycang.com/Public/build/img/i/login/loginreg_logo.png" alt="logo" border="0"></a>
-            <div class="c_line c_fl"></div>
-            <h1 class="c_top_txt c_fl">欢迎注册</h1>
+<div class="c_content c_content_top">
+    <a href="javascript:void(0);" onclick="doIndexUI()"><img class="c_top_logo c_fl" src="image/lg.png" alt="logo" border="0" width="70px"></a>
+    <div class="c_line c_fl"></div>
+    <h1 class="c_top_txt c_fl">欢迎注册</h1>
+    <div class="c_clear_both"></div>
+</div>
+<!-- header end -->
+<div class="c_reg_wrap">
+<div class="c_content">
+    <ul class="c_reg_box">
+        <li>
+            <label><input type="text" class="c_reg_input c_fr c_reg_us" id="name" name="name" placeholder="请输入用户名"><span>用户名：</span></label>	
+            <div class="c_clear_both"></div>	
+        </li>
+        <li>
+            <label><input type="text" class="c_reg_input c_fr c_reg_ph" id="phone" name="phone" placeholder="请输入手机号"><span>手机号：</span></label>	
+            <div class="c_clear_both"></div>	
+        </li>
+        <li>
+            <input type="button" value="获取验证码" class="c_btn c_btn_ph c_fr" id="msgcode-btn"><label><input type="text" class="c_reg_input c_reg_input_v c_fr" placeholder="请输入验证码"name="sms_verify" id="sms_verify"><span>手机验证：</span></label>
             <div class="c_clear_both"></div>
+        </li>
+        <li>
+            <label><input type="password" class="c_reg_input c_fr c_reg_lock" name="pwd" id="pwd" placeholder="请输入您的密码"><span>密码：</span></label>
+            <div class="c_clear_both"></div>	
+        </li>
+        <li>
+            <label><input type="password" class="c_reg_input c_fr c_reg_lock" name="repwd" id="repwd" placeholder="请再次输入密码"><span>确认密码：</span></label>
+            <div class="c_clear_both"></div>
+        </li>
+        <li class="c_reg_check">
+            <label><input type="checkbox" name="if_agree" value="1" id="if_agree" checked>阅读并接受C哩C哩商城</label><a href="#" target="_blank">[用户协议]</a>
+        </li>
+        <li>
+            <input type="submit" value="注&nbsp;&nbsp;册" class="c_btn c_btn_reg c_fl" id="reg-btn">
+            <a href="javascript:void(0);" onclick="doLoginUI()" class="c_btn c_btn_login c_fl" id="login-btn">返回登录</a>
+            <div class="c_clear_both"></div>
+        </li>
+        <li class="c_wq_login">
+
+            <span class="c_fl">合作账号登录：</span>
+            <span class="c_fl"  title="微博">
+                <a href="https://api.weibo.com/oauth2/authorize?client_id=3038839783&redirect_uri=http%3A%2F%2Fcycang.com%2Fweibo_login_callback.php&response_type=code" target="_blank"><div class="c_weibo_icon c_fl"></div>微博登录</a>
+            </span>
+            <span class="c_fl" title="QQ">
+                <a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101226230&redirect_uri=http%3A%2F%2Fcycang.com%2Fqq_login_callback.php&state=2d6f6776e6946caeb08d499de2f4ab28&scope=get_user_info" target="_blank"><div class="c_qq_icon c_fl"></div>QQ登录</a>
+            </span>
+            <!--TODO wechat url-->
+            <span class="c_fl" title="微信">
+                <a href="javascript:;" class="c_wechat_btn"><div class="c_wechat_icon c_fl"></div>微信登录</a>
+            </span>
+            <div class="c_clear_both"></div>
+
+        </li>
+    </ul>
+
+    <!--wechat login-->
+    <div class="c_wechat_box">
+        <div id="wechat_login_container"></div>
+        <div class="c_wechat_back">返回注册</div>
     </div>
-    <!-- header end -->
-    <div class="c_reg_wrap">
-        <div class="c_content">
-            <ul class="c_reg_box">
-                <li>
-                    <label><input type="text" class="c_reg_input c_fr c_reg_ph" id="phone" name="phone" placeholder="请输入手机号"><span>手机号：</span></label>	
-                    <div class="c_clear_both"></div>	
-                </li>
-                <li>
-                    <label><input type="password" class="c_reg_input c_fr c_reg_lock" name="pwd" id="pwd" placeholder="请输入您的密码"><span>密码：</span></label>
-                    <div class="c_clear_both"></div>	
-                </li>
-                <li>
-                    <label><input type="password" class="c_reg_input c_fr c_reg_lock" name="repwd" id="repwd" placeholder="请再次输入密码"><span>确认密码：</span></label>
-                    <div class="c_clear_both"></div>
-                </li>
-                <li>
-                    <label><div id="vaptchaContainer" class=" c_fr c_reg_input" style="border:none;padding: 0"></div><span><input type="hidden" name="vaptchaToken" value="" id="vaptchaToken"></span></label>
-                    <div class="c_clear_both"></div>
-                </li>
-                <li>
-                    <input type="button" value="获取验证码" class="c_btn c_btn_ph c_fr" id="msgcode-btn"><label><input type="text" class="c_reg_input c_reg_input_v c_fr" placeholder="请输入验证码"name="sms_verify" id="sms_verify"><span>手机验证：</span></label>
-                    <div class="c_clear_both"></div>
-                </li>
-                <li class="c_reg_check">
-                    <label><input type="checkbox" name="if_agree" value="1" id="if_agree" checked>阅读并接受次元仓</label><a href="i.php?c=login&a=accord" target="_blank">[用户协议]</a>
-                </li>
-                <li>
-                    <input type="submit" value="注&nbsp;&nbsp;册" class="c_btn c_btn_reg c_fl" id="reg-btn">
-                    <a href="i.php?c=login" class="c_btn c_btn_login c_fl" id="login-btn">返回登录</a>
-                    <div class="c_clear_both"></div>
-                </li>
-                <li class="c_wq_login">
-    
-                    <span class="c_fl">合作账号登录：</span>
-                    <span class="c_fl"  title="微博">
-                        <a href="https://api.weibo.com/oauth2/authorize?client_id=3038839783&redirect_uri=http%3A%2F%2Fcycang.com%2Fweibo_login_callback.php&response_type=code" target="_blank"><div class="c_weibo_icon c_fl"></div>微博登录</a>
-                    </span>
-                    <span class="c_fl" title="QQ">
-                        <a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101226230&redirect_uri=http%3A%2F%2Fcycang.com%2Fqq_login_callback.php&state=e2852d720d680dbb8c12e285d31e80d2&scope=get_user_info" target="_blank"><div class="c_qq_icon c_fl"></div>QQ登录</a>
-                    </span>
-                    <!--TODO wechat url-->
-                    <span class="c_fl" title="微信">
-                        <a href="javascript:;" class="c_wechat_btn"><div class="c_wechat_icon c_fl"></div>微信登录</a>
-                    </span>
-                    <div class="c_clear_both"></div>
-    
-                </li>
-            </ul>
-    
-            <!--wechat login-->
-            <div class="c_wechat_box">
-                <div id="wechat_login_container"></div>
-                <div class="c_wechat_back">返回注册</div>
-            </div>
-        </div>
+</div>
+</div>
+<input type="hidden" id="c_sms_url" value="i.php">
+<div class="c_footer c_footer2">
+<div class="c_content">
+    <div class="c_customer_service"></div>
+    <div class="c_copy_right"> ICP © 2020 Fx函数科技有限公司 版权所有
+        <!-- cycang.com Baidu tongji analytics -->
     </div>
-    <input type="hidden" id="c_sms_url" value="i.php">
-    <div class="c_footer c_footer2">
-        <div class="c_content">
-            <div class="c_customer_service"></div>
-            <div class="c_copy_right"> ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">粤ICP备15028368号</a>)
-            <!-- cycang.com Baidu tongji analytics -->
-            </div>
-        </div>
-    </div>
-    <script src="//www.cycang.com/Public/js/jquery.js" type="text/javascript"></script>
-    <script>
-    $(function(){  
-      $("#verify").click(function(){ 
-            $(this).attr("src", "i.php?c=login&a=captcha"); 
-        }); 
-    }); 
-    </script>
-    <div style="display:none">
-        <!-- <script type="text/javascript">
-            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc5a2a3ab962346d1e9cfaf5dc654c2f5' type='text/javascript'%3E%3C/script%3E"));
-        </script> -->
-        <script src="http://sdk.talkingdata.com/app/h5/v1?appid=5D12EFC332284F5AB6F1504DF2BC4CAB"></script>
-    </div>
-    <script src="//www.cycang.com/Public/js/jquery.js" type="text/javascript"></script>
-    <script src="//res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
-    <!-- 人机验证 -->
-    <script src="https://cdn.vaptcha.com/v2.js"></script>
-    <script src="//www.cycang.com/Public/build/js/i/reg.js"></script>
-    </body>
+</div>
+</div>
+<script type="text/javascript">
+function doLoginUI(){
+	location.href="login";
+}
+function doIndexUI(){
+	location.href="index";
+}
+</script>
+</body>
 </html>
