@@ -1,6 +1,9 @@
 package com.fx.clicli.controller;
 
+import javax.websocket.server.PathParam;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -9,29 +12,8 @@ public class PageController {
     /**
      * C哩C哩商品主页
      */
-	@RequestMapping("index")
-	public String doIndexUI() {
-		return "index";
+	@RequestMapping("{pageName}")
+	public String doIndexUI(@PathVariable String pageName) {
+		return pageName;
 	} 
-	/**
-	 * C哩C哩商品查询页
-	 */
-	@RequestMapping("search")
-	public String doSearchUI() {
-		return "search";
-	}
-	/**
-	 * C哩C哩登录页
-	 */
-	@RequestMapping("login")
-	public String doLoginUI() {
-		return "login";
-	}
-	/**
-	 * C哩C哩注册页
-	 */
-	@RequestMapping("register")
-	public String doRegisterUI() {
-		return "register";
-	}
 }
